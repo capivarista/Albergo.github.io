@@ -12,6 +12,8 @@ html {
   display: flex;
   justify-content: left;
   align-items: center;
+  width: 99.1vw;
+  box-sizing: border-box;
 }
 
 .iconMenu {
