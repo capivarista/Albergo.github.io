@@ -15,14 +15,12 @@
   <script src="scripts/script.js" type="text/javascript" defer></script>
 </head>
 
-
-
 <body>
 
   <!--header-->
 
   <div class="header">
-    <img class="iconMenu" src="imagens/icon.png">
+    <img class="iconMenu" src="imagens/icon.png" onclick="toggleSubMenu()">
     <img class="iconAlbergo" src="imagens/Albergo (3).png">
     <h1 class="albergoNome">ALBERGO</h1>
     <div class="header2">
@@ -31,6 +29,14 @@
       <h1 class="headerInfos">CONTATO</h1>
     </div>
   </div>
+  
+  <!-- Submenu -->
+  <div id="submenu" class="submenu">
+    <a href="#">Info jobs</a>
+    <a href="#">Sobre nós</a>
+    <a href="#">Documentações</a>
+  </div>
+  
   <div class="todoInicio">
     <div class="inicio">
       <h1 class="textoInicial">
@@ -181,7 +187,7 @@
 
   <!--Chat-->
 
-  <button id="chatButton" onclick="openChat()">Chat</button>
+  <button id="chatButton" onclick="openChat()">!</button>
 
   <div id="chatModal" class="modal">
     <div class="modal-content">
@@ -194,7 +200,6 @@
       </div>
     </div>
   </div>
-
 
 </body>
 
