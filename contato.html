@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="styles/style.css" rel="stylesheet" type="text/css" />
+  <link href="styles/contato.css" rel="stylesheet" type="text/css" />
+  <script src="scripts/script.js" type="text/javascript" defer></script>
   <title>Document</title>
 </head>
 <body>
@@ -26,21 +27,45 @@
     <a href="#">Sobre nós</a>
     <a href="#">Documentações</a>
   </div>
+  
+  <center>
+    <h1 class="contato">CONTATO</h1>
+  </center>
+  
+   
+  
+<div class="container">
+  <div class="infosContato"> 
+    <form action="https://formsubmit.co/59f14e27a72fee82c27e10cb9f98e8da" method="POST" class="form">
+      <span class="input-span">
+         <label for="nome" class="label">Nome</label>
+         <input name="name" id="nome" type="text" required><br>
+      </span>
+      <span class="input-span">
+        <label for="email" class="label">Email</label>
+        <input name="email" id="email" type="email" required><br>
+      </span>
+      <span class="button">
+          <select class="select" name="_subject">
+            <option>Sugestões e críticas</option>
+            <option>Problemas e erros</option>
+            <option>Contrato e parcerias</option>
+          </select><br>
+      </span>
+      <span>
+        <textarea class="textArea" name="message" id="textArea" cols="30" rows="10" required >
+        </textarea><br>
+      </span>
+      <span class="button">
+          <input type="submit" name="submit" class="submit" value="Enviar"> 
+          <input type="hidden" name="_next" value="https://55eed97e-7e8f-480c-a43b-cc3fba18f776-00-z0n1unqrmhzv.riker.replit.dev">
+          <input type="hidden" name="_captcha" value="false">
+      </span>
+    </form>
+ </div>
+</div>
 
 
-  <div>
-    <center>
-      <h1>CONTATO</h1>
-    </center>
-  </div>
-  <select>
-    <option value="sugestao">Sugestões e críticas</option>
-    <option value="problemas">Problemas e erros</option>
-    <option value="parcerias">Parcerias e contrato</option>
-  </select>
-  <textarea>
-    
-  </textarea>
 
 </body>
 </html>
