@@ -5,27 +5,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="styles/contato.css" rel="stylesheet" type="text/css" />
+  <link href="styles/header.css" rel="stylesheet" type="text/css" />
   <script src="scripts/script.js" type="text/javascript" defer></script>
-  <title>Document</title>
+  <title>Contato</title>
 </head>
 <body>
   <div class="header">
     <img class="iconMenu" src="imagens/icon.png" onclick="toggleSubMenu()">
-    <img class="iconAlbergo" src="imagens/Albergo (3).png">
+    <a href="index.html">
+      <img class="iconAlbergo" src="imagens/Albergo (3).png">
+    </a>
     <h1 class="albergoNome">ALBERGO</h1>
     <div class="header2">
-      <h1 class="headerInfos">PRODUTO</h1>
-      <h1 class="headerInfos">EMPRESA</h1>
-      <h1 class="headerInfos">CONTATO</h1>
+      <h1 class="headerInfos"><a class="link" href="produto.html">PRODUTO</a></h1>
+      <h1 class="headerInfos"><a class="link" href="sobrenos.html">EMPRESA</a></h1>
+      <h1 class="headerInfos"><a class="link" href="contato.html">CONTATO</a></h1>
       <h1 class="headerInfos"><a class="link" href="login.html">LOGIN</a></h1>
     </div>
   </div>
 
   <!-- Submenu -->
   <div id="submenu" class="submenu">
-    <a href="#">Info jobs</a>
-    <a href="#">Sobre nós</a>
-    <a href="#">Documentações</a>
+    <a href="infoJobs.html">Info jobs</a>
+    <a href="sobrenos.html">Sobre nós</a>
+    <a href="documentacao.html">Documentações</a>
   </div>
   
   <center>
@@ -53,7 +56,7 @@
           </select><br>
       </span>
       <span>
-        <textarea class="textArea" name="message" id="textArea" cols="30" rows="10" required >
+        <textarea class="textArea" name="message" id="textArea" cols="40" rows="10" required >
         </textarea><br>
       </span>
       <span class="button">

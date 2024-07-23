@@ -1,109 +1,217 @@
-html {
-  height: 100%;
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-}
 
-.header {
-  margin: 0px;
-  padding: 10px;
-  background-color: black;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-}
-
-.iconMenu {
-  width: 50px;
-  cursor: pointer;
-}
-
-.iconAlbergo {
-  height: 70px;
-  margin-left: 20px;
-}
-
-.albergoNome {
-  color: white;
-  margin-left: 5px;
-}
-
-body {
-  padding: 0px;
-  margin: 0px;
-  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background-color: #f5f5f5;
-}
-
-.headerInfos {
-  color: white;
-  margin-left: 15px;
-  font-size: 1em;
-}
-
-.link {
-  text-decoration: none;
-  color: #ffffff
-}
-
-/* link que foi visitado */
-.link:visited {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-/* quando o ponteiro do mouse passa no link */
-.link:hover {
-  text-decoration: none;
-  color: #999;
-}
-
-/* quando o link for selecionado */
-.link:active {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.header2 {
-  display: flex;
-  justify-content: right;
-  padding-left: 1190px;
-}
-.submenu {
-  display: none;
-  position: absolute;
-  top: 80px;
-  left: 10px;
-  background-color: white;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.submenu a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.submenu a:hover {
-  background-color: #ddd;
-}
 
 .oqueAlbergo {
-    display: flex;
-    font-size: 40px;
-    width: 100%;
-    height: 500px;
-    background-image: url("female-receptionist-elegant-suit-work-hours.jpg");
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat;
+  display: flex;
+  font-size: 40px;
+  width: 100%;
+  height: 500px;
+  background-image: url("../imagens/recepcionist.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.textoOqueAlbergo{
+
+.textoOqueAlbergo {
   width: 800px;
   margin: 0px;
   padding: 0px;
- 
+  color: white;
+  margin-left: 900px;
+  margin-top: 40px;
+  text-align: right;
+
+}
+
+.titulo {
+  font-size: 32px;
+}
+
+.texto {
+  font-size: 18px;
+}
+
+.Sessao {
+  margin-left: 100px;
+  margin-top: 150px;
+}
+
+.caixaTexto {
+  width: 800px;
+}
+
+.imagemTela {
+  height: 300px;
+  width: 600px;
+  margin-left: 60px;
+  justify-content: center;
+}
+
+.display {
+  display: flex;
+  align-items: center;
+}
+
+.textoAba {
+  height: 300px;
+  width: 600px;
+  justify-content: center;
+
+}
+
+.calendario {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.day {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.color-input,
+.color-picker,
+.day-input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.sessaoCalendario {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 500px;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.personalizacao {
+  width: 750px;
+}
+
+ul li::marker {
+  color: #00BF63;
+}
+
+
+
+#sessaoCalendario {
+  padding: 20px;
+  background-color: #00BF63;
+  border-radius: 10px;
+  height: 500px;
+  width: 500px;
+  margin-left: 200px;
+  box-shadow: 10px 10px #2C664B;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.day {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.color-input,
+.color-picker,
+.day-input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.divCalendario {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.change-color-button ,.change-bg-color-button ,.reset-colors-button{
+  border-radius: 5px;
+  padding: 0.75rem 0.4rem;
+  background-color: #9c9c9c60;
+  color: white;
+  border: none;
+  outline: 2px solid #707070;
+  cursor: pointer;
+}
+.change-color-button:focus ,.change-bg-color-button:focus ,.reset-colors-button:focus{
+  outline: 2px solid #58bc82;
+}
+.color-input, .start-day, .end-day{
+  border-radius: 0.5rem;
+  padding: 0.75rem 0.4rem;
+  border: none;
+  outline: 2px solid #707070;
+}
+.complemento{
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.reservas, .pluguins{
+  width: 500px;
+}
+.notificacao{
+  text-align: right;
+  align-content: rigth;
+  align-items: rigth;
+  width: 500px;
+  margin-left: 500px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.imagem{
+  width: 500px;
+}
+.notificacao, .pluguins, .reservas{
+
+  width: 1000px;
+  height: 500px;
+  align-items: center;
+}
+.imagemPequena{
+  width: 80px;
+  margin-left: 20px;
+  margin-right: 20px;
+  
 }
