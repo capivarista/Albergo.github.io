@@ -67,7 +67,7 @@ ob_end_flush();
           <h1 class="headerInfos"><a class="link" href="produto.html">PRODUTO</a></h1>
           <h1 class="headerInfos"><a class="link" href="sobrenos.html">EMPRESA</a></h1>
           <h1 class="headerInfos"><a class="link" href="contato.html">CONTATO</a></h1>
-          <h1 class="headerInfos"><a class="link" href="api/login.php">LOGIN</a></h1>
+          <h1 class="headerInfos"><a class="link" href="login.php">LOGIN</a></h1>
           </div>
       </div>
 
@@ -91,7 +91,7 @@ ob_end_flush();
                 </span>
                 <span class="span"><a href="#">Esqueceu a senha?</a></span>
                 <input class="submit" type="submit" value="Log in" />
-                <span class="span">Não tem conta? <a href="api/registro.php">Registrar</a></span>
+                <span class="span">Não tem conta? <a href="registro.php">Registrar</a></span>
             </form>
         </div>
     </div>
