@@ -67,3 +67,5 @@ resetColorsButton.addEventListener('click', () => {
     resetColors(color, dayColors);
 
 });
+
+

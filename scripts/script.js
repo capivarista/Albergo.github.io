@@ -35,3 +35,16 @@ function toggleSubMenu() {
     submenu.style.display = "block";
   }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const loginLink = document.getElementById('login-link');
+
+    // Verifica se o usuário está logado (você pode verificar o cookie ou qualquer outro indicador de login)
+    const isLoggedIn = document.cookie.split('; ').find(row => row.startsWith('loggedIn='));
+
+    if (isLoggedIn) {
+        loginLink.textContent = 'PERFIL';
+        loginLink.href = 'perfil.html'; // Altere para a página de perfil
+    }
+});
+
