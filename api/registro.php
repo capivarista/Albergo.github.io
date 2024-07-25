@@ -61,8 +61,8 @@ ob_end_flush();
             <h1 class="headerInfos"><a class="link" href="produto.html">PRODUTO</a></h1>
             <h1 class="headerInfos"><a class="link" href="sobrenos.html">EMPRESA</a></h1>
             <h1 class="headerInfos"><a class="link" href="contato.html">CONTATO</a></h1>
-            <h1 class="headerInfos"><a class="link" href="login.php">LOGIN</a></h1>
-        </div>
+            <h1 class="headerInfos"><a class="link" href="api/login.php">LOGIN</a></h1>
+            </div>
     </div>
 
     <!-- Submenu -->
@@ -124,7 +124,7 @@ ob_end_flush();
                 <div class="form-footer">
                     <span class="span"><a href="contato.html">Precisa de ajuda?</a></span>
                     <input class="submit" type="submit" value="Registrar" />
-                    <span class="span">Já tem conta? <a href="login.php">Login</a></span>
+                    <span class="span">Já tem conta? <a href="api/login.php">Login</a></span>
                 </div>
             </form>
         </div>
