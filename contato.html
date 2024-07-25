@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles/contato.css" rel="stylesheet" type="text/css" />
+  <link href="styles/header.css" rel="stylesheet" type="text/css" />
+  <script src="scripts/script.js" type="text/javascript" defer></script>
+  <title>Contato</title>
+</head>
+<body>
+  <div class="header">
+    <img class="iconMenu" src="imagens/icon.png" onclick="toggleSubMenu()">
+    <a href="index.html">
+      <img class="iconAlbergo" src="imagens/Albergo (3).png">
+    </a>
+    <h1 class="albergoNome">ALBERGO</h1>
+    <div class="header2">
+      <h1 class="headerInfos"><a class="link" href="produto.html">PRODUTO</a></h1>
+      <h1 class="headerInfos"><a class="link" href="sobrenos.html">EMPRESA</a></h1>
+      <h1 class="headerInfos"><a class="link" href="contato.html">CONTATO</a></h1>
+      <h1 class="headerInfos"><a class="link" href="login.php">LOGIN</a></h1>
+    </div>
+  </div>
+
+  <!-- Submenu -->
+  <div id="submenu" class="submenu">
+    <a href="infoJobs.html">Info jobs</a>
+    <a href="sobrenos.html">Sobre nós</a>
+    <a href="documentacao.html">Documentações</a>
+  </div>
+  
+  <center>
+    <h1 class="contato">CONTATO</h1>
+  </center>
+  
+   
+  
+<div class="container">
+  <div class="infosContato"> 
+    <form action="https://formsubmit.co/59f14e27a72fee82c27e10cb9f98e8da" method="POST" class="form">
+      <span class="input-span">
+         <label for="nome" class="label">Nome</label>
+         <input name="name" id="nome" type="text" required><br>
+      </span>
+      <span class="input-span">
+        <label for="email" class="label">Email</label>
+        <input name="email" id="email" type="email" required><br>
+      </span>
+      <span class="button">
+          <select class="select" name="_subject">
+            <option>Sugestões e críticas</option>
+            <option>Problemas e erros</option>
+            <option>Contrato e parcerias</option>
+          </select><br>
+      </span>
+      <span>
+        <textarea class="textArea" name="message" id="textArea" cols="40" rows="10" required >
+        </textarea><br>
+      </span>
+      <span class="button">
+          <input type="submit" name="submit" class="submit" value="Enviar"> 
+          <input type="hidden" name="_next" value="https://55eed97e-7e8f-480c-a43b-cc3fba18f776-00-z0n1unqrmhzv.riker.replit.dev">
+          <input type="hidden" name="_captcha" value="false">
+      </span>
+    </form>
+ </div>
+</div>
+
+
+
+</body>
+</html>

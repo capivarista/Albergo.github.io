@@ -1,0 +1,276 @@
+
+.oqueAlbergo {
+  display: flex;
+  font-size: 40px;
+  width: 100%;
+  height: 500px;
+  background-image: url("../imagens/recepcionist.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.textoOqueAlbergo {
+  width: 800px;
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  margin-left: 900px;
+  margin-top: 40px;
+  text-align: justify;
+  text-align-last: left;
+  hyphens: auto;
+  
+
+}
+
+.titulo {
+  font-size: 32px;
+}
+
+.texto {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.Sessao {
+  margin-left: 200px;
+  margin-top: 30px;
+}
+
+.caixaTexto {
+  text-align: start;
+  width: 600px;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  
+  
+}
+
+.imagemTela {
+  height: 300px;
+  width: 600px;
+  margin-left: 60px;
+  justify-content: center;
+}
+
+.display {
+  display: flex;
+  align-items: center;
+}
+
+.textoAba {
+  height: 80px;
+  width: 600px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+
+}
+
+.calendario {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.day {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.color-input,
+.color-picker,
+.day-input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.sessaoCalendario {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 500px;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.personalizacao {
+  width: 750px;
+}
+
+ul li::marker {
+  color: #00BF63;
+}
+
+
+
+#sessaoCalendario {
+  padding: 20px;
+  background-color: #00BF63;
+  border-radius: 10px;
+  height: 500px;
+  width: 500px;
+  margin-left: 200px;
+  box-shadow: 10px 10px #2C664B;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.day {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.color-input,
+.color-picker,
+.day-input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.divCalendario {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.change-color-button ,.change-bg-color-button ,.reset-colors-button{
+  border-radius: 5px;
+  padding: 0.75rem 0.4rem;
+  background-color: #9c9c9c60;
+  color: white;
+  border: none;
+  outline: 2px solid #707070;
+  cursor: pointer;
+}
+.change-color-button:focus ,.change-bg-color-button:focus ,.reset-colors-button:focus{
+  outline: 2px solid #58bc82;
+}
+.color-input, .start-day, .end-day{
+  border-radius: 0.5rem;
+  padding: 0.75rem 0.4rem;
+  border: none;
+  outline: 2px solid #707070;
+}
+.complemento{
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.reservas, .pluguins{
+  width: 500px;
+}
+.notificacao{
+  text-align: right;
+  align-content: rigth;
+  align-items: rigth;
+  width: 500px;
+  margin-left: 500px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.imagem{
+  width: 500px;
+}
+.notificacao, .pluguins, .reservas{
+
+  width: 1000px;
+  height: 500px;
+  align-items: center;
+}
+.imagemPequena{
+  width: 80px;
+  margin-left: 20px;
+  margin-right: 20px;
+  
+}
+.retangulo{
+  width: 575px;
+  height: 116px;
+  background-color: #f5f5f5;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .08);
+  align-items: center;
+  display: block;
+  padding: 10px;
+  
+ 
+}
+.imagemRetangulo{
+  width: 40px;
+}
+.retanguloMenor{
+  display: flex; 
+  align-items: center;
+ 
+}
+.imagemLista{
+  width: 50px;
+  height: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+  transition: 0.5s;
+}
+.imagemLista:hover{
+  width: 70px;
+  height: 70px;
+}
+.faleConosco{
+  background: linear-gradient(260deg,  rgba(204, 251, 215, 1) 37%, rgba(93, 228, 163, 1) 100%);
+  height: 150px;
+  display: flex;
+  justify-items:center;
+}
+.textoFaleConosco{
+  color: white;
+  font-size: 40px;
+  margin-left: 30px;
+}
+.pluginsLoja{
+  justify-content:center;
+  align-items:center;
+  display: flex;
+  margin-top: 50px;
+  
+}

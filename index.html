@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width">
   <title>Albergo</title>
   <link href="styles/style.css" rel="stylesheet" type="text/css" />
-
+  <link href="styles/header.css" rel="stylesheet" type="text/css" />
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap-theme.min.css">
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -18,25 +18,27 @@
 <body>
 
   <!--header-->
-
   <div class="header">
     <img class="iconMenu" src="imagens/icon.png" onclick="toggleSubMenu()">
-    <img class="iconAlbergo" src="imagens/Albergo (3).png">
+    <a href="index.html">
+      <img class="iconAlbergo" src="imagens/Albergo (3).png">
+    </a>
     <h1 class="albergoNome">ALBERGO</h1>
     <div class="header2">
-      <h1 class="headerInfos">PRODUTO</h1>
-      <h1 class="headerInfos">EMPRESA</h1>
-      <h1 class="headerInfos">CONTATO</h1>
+      <h1 class="headerInfos"><a class="link" href="produto.html">PRODUTO</a></h1>
+      <h1 class="headerInfos"><a class="link" href="sobrenos.html">EMPRESA</a></h1>
+      <h1 class="headerInfos"><a class="link" href="contato.html">CONTATO</a></h1>
+      <h1 class="headerInfos"><a class="link" id="login-link" href="login.php">LOGIN</a></h1>
     </div>
   </div>
-  
+
   <!-- Submenu -->
   <div id="submenu" class="submenu">
-    <a href="#">Info jobs</a>
-    <a href="#">Sobre nós</a>
-    <a href="#">Documentações</a>
+    <a href="infoJobs.html">Info jobs</a>
+    <a href="sobrenos.html">Sobre nós</a>
+    <a href="documentacao.html">Documentações</a>
   </div>
-  
+
   <div class="todoInicio">
     <div class="inicio">
       <h1 class="textoInicial">
@@ -125,32 +127,6 @@
 
   <br>
 
-  <!--planos-->
-
-  <center>
-    <h1>Escolha seu plano</h1>
-  </center>
-  <div class="planos">
-    <div class="planoGratuito">
-      <p>
-        <b>Plano Gratuito</b><br>R$ 00,00/mês<br><a class="assinar">Assinar agora</a><br><br> Poder utilizar o software
-        base<br>Apenas um desktop<br>Não poder comprar plug-ins<br>Personalização limitada
-      </p>
-    </div>
-    <div class="planoMedio">
-      <p>
-        <b>Plano Médio</b><br>R$ 99,00/mês<br><a class="assinar">Assinar agora</a><br><br> Poder utilizar o software
-        base<br>Até três desktop<br>Compra de plug-ins liberada<br>Personalização total
-      </p>
-    </div>
-    <div class="planoAlto">
-      <p>
-        <b>Plano Total</b><br>R$ 250,00/mês<br><a class="assinar">Assinar agora</a><br><br> Poder utilizar o software
-        base<br>Sem limitações<br>Compra de plug-ins liberada<br>Pacotes de plug-ins exclusivos<br>Personalização total
-      </p>
-    </div>
-  </div>
-
   <!--acessibilidade-->
 
   <div class="acessibilidadeSessao">
@@ -170,7 +146,10 @@
 
   <!--personalização-->
 
-  <div class="acessibilidadeSessao">
+  <div id="acessibilidadeSessao" class="acessibilidadeSessao">
+    <div class="imagemAcessibilidade">
+      <img class="cadeirante" src="imagens/gifPerso.gif">
+    </div>
     <div class="acessiblidade">
       <h1 class="titulo">Personalização</h1>
       <p class="texto">
@@ -179,8 +158,36 @@
         inserida no Albergo
       </p>
     </div>
-    <div class="imagemAcessibilidade">
-      <img class="cadeirante" src="imagens/AlbergoGif.gif">
+
+  </div>
+
+
+  <!--planos-->
+
+  <center>
+    <h1 class="escolha">Escolha seu plano</h1>
+  </center>
+  <div class="planos">
+    <div class="planoGratuito">
+      <p>
+        <b>Plano Gratuito</b><br>R$ 00,00/mês<br><a class="assinar link">Assinar agora</a><br><br> Poder utilizar o
+        software
+        base<br>Apenas um desktop<br>Não poder comprar plug-ins<br>Personalização limitada
+      </p>
+    </div>
+    <div class="planoMedio">
+      <p>
+        <b>Plano Médio</b><br>R$ 99,00/mês<br><a class="assinar link">Assinar agora</a><br><br> Poder utilizar o
+        software
+        base<br>Até três desktop<br>Compra de plug-ins liberada<br>Personalização total
+      </p>
+    </div>
+    <div class="planoAlto">
+      <p>
+        <b>Plano Total</b><br>R$ 250,00/mês<br><a class="assinar link">Assinar agora</a><br><br> Poder utilizar o
+        software
+        base<br>Sem limitações<br>Compra de plug-ins liberada<br>Pacotes de plug-ins exclusivos<br>Personalização total
+      </p>
     </div>
   </div>
 
